@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+ENV/
+.env
+
+# Test/cache
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Local MLflow tracking files
+mlruns/*
+!mlruns/.gitkeep
+mlartifacts/
+
+# Optional local logs
+*.log
+
+# Keep deployable model/data/report artifacts in Git when intentionally generated.
+# They are required by the Streamlit/FastAPI demo.
+
+mlflow.db
